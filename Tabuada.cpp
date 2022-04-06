@@ -1,20 +1,14 @@
 #include <stdio.h>
+int main(void)
 
-int main () {
+{
+int numero, cont=0;
 
-    int y, x;
+    printf("Digite um numero: ");
+    scanf("%d",&numero);
 
-    for(y = 2; y <=10;){
-
-        for (x=1;x <=10;x++){
-
-            printf("%ix%i=%i\n", y, x, y*x);
-        }
-
-        y += 2;
+    for (cont=0; cont<=10 ; cont++){
+        printf("%d x %d = %d \n",numero,cont,numero*cont);
     }
-
-
-
-return 0;
+    return 0;
 }
